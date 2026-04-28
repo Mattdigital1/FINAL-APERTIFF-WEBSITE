@@ -1,0 +1,9 @@
+{
+  "name": "aperitif-website",
+  "version": "1.0.0",
+  "description": "Aperitif Spritz & Bites — static website",
+  "scripts": {
+    "build": "echo 'Static site'",
+    "start": "echo 'Static site'"
+  }
+}
