@@ -1156,10 +1156,14 @@ footer {
   #gallery      { padding: 72px 0; }
 
   /* Reviews */
-  .rating-bar     { flex-direction: column; align-items: flex-start; gap: 16px; padding: 40px 20px 0; }
-  .rating-badges  { margin-left: 0; }
-  .reviews-track-wrap { padding: 0 12px; gap: 8px; }
-  .rev-arrow      { width: 36px; height: 36px; }
+  .rating-bar          { flex-direction: column; align-items: flex-start; gap: 16px; padding: 40px 20px 0; }
+  .rating-badges       { margin-left: 0; }
+  .rev-arrow           { display: none; }
+  .reviews-track-wrap  { padding: 0; gap: 0; }
+  .reviews-viewport    { width: 100%; }
+  .review-card         { flex: 0 0 calc(100vw - 48px); padding: 28px 24px; margin: 0 4px; }
+  .reviews-dots        { margin-top: 24px; }
+  .rev-dot             { width: 8px; height: 8px; }
 
   /* Catering */
   .catering-strip { padding: 60px 20px; }
@@ -1214,9 +1218,7 @@ footer {
   .contact-map    { height: 220px; }
 
   /* Reviews */
-  .reviews-track-wrap { padding: 0 8px; gap: 6px; }
-  .rev-arrow      { width: 32px; height: 32px; }
-  .review-card    { padding: 28px 20px; }
+  .review-card    { flex: 0 0 calc(100vw - 32px); padding: 24px 20px; }
 
   /* Footer */
   .footer-nav     { gap: 10px; }
