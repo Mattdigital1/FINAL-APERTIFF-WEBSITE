@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aperitif Spritz &amp; Bites — Mandeville, Louisiana</title>
+  <meta name="description" content="A lakefront dining destination in Mandeville, LA blending New Orleans warmth with Parisian bistro charm. Located at 1943 Lakeshore Drive." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-text">
+          <span class="logo-name">aperitif</span>
+          <span class="logo-sub">spritz &amp; bites</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" onclick="closeNav()">Our Story</a></li>
+        <li><a href="#cayman" onclick="closeNav()">About Cayman</a></li>
+        <li><a href="#menu" onclick="closeNav()">Menu</a></li>
+        <li><a href="#gallery" onclick="closeNav()">Gallery</a></li>
+        <li><a href="#reviews" onclick="closeNav()">Reviews</a></li>
+        <li><a href="#visit" onclick="closeNav()">Visit</a></li>
+        <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+        <li class="nav-cta"><a href="https://tables.toasttab.com/restaurants/673c77e6-483f-44d1-815d-1c712a38464c/findTime" target="_blank" rel="noopener" onclick="closeNav()">Reserve a Table</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <img src="https://static.wixstatic.com/media/c3d214_6942a204dec8458a81d82e450f9b5eb5~mv2.jpg" alt="Aperitif Spritz & Bites exterior" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-logo-text">
+        <span class="logo-name-hero">aperitif</span>
+        <span class="logo-sub-hero">spritz &amp; bites</span>
+      </div>
+      <p class="hero-sub">1943 Lakeshore Drive &nbsp;·&nbsp; Mandeville, Louisiana</p>
+      <div class="hero-divider"></div>
+      <p class="hero-tagline">Where New Orleans warmth meets Parisian savoir-faire,<br>overlooking the waters of Lake Pontchartrain.</p>
+      <div class="hero-actions">
+        <a href="https://tables.toasttab.com/restaurants/673c77e6-483f-44d1-815d-1c712a38464c/findTime" target="_blank" rel="noopener" class="btn btn-primary">Reserve a Table</a>
+        <a href="#menu" class="btn btn-outline">View Our Menu</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+  </section>
+
+  <!-- INTRO STRIP -->
+  <section class="intro-strip">
+    <div class="strip-item">
+      <span class="strip-icon">◆</span>
+      <span>Wednesday &nbsp;5–8 pm</span>
+    </div>
+    <div class="strip-divider"></div>
+    <div class="strip-item">
+      <span class="strip-icon">◆</span>
+      <span>Thursday &nbsp;11 am–8 pm</span>
+    </div>
+    <div class="strip-divider"></div>
+    <div class="strip-item">
+      <span class="strip-icon">◆</span>
+      <span>Friday &amp; Saturday &nbsp;11 am–9 pm</span>
+    </div>
+    <div class="strip-divider"></div>
+    <div class="strip-item">
+      <span class="strip-icon">◆</span>
+      <span>985.778.2045</span>
+    </div>
+  </section>
+
+  <!-- REVIEW TICKER -->
+  <div class="review-ticker-wrap" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-item"><span class="ticker-stars">★★★★★</span>"Do not miss the oysters." — NOLA.com / Times-Picayune</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item"><span class="ticker-stars">★★★★★</span>"One of the most refined dining experiences on the Northshore." — William O'Rourke, Google</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item"><span class="ticker-stars">★★★★★</span>"The crown jewel of the Old Mandeville lakefront." — Arnaud Wauters, Google</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item"><span class="ticker-stars">★★★★★</span>"Easily the best restaurant in Louisiana." — Maxwell E., Google</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item"><span class="ticker-stars">★★★★★</span>"The kind of restaurant you stay at for hours." — NoMenu.com</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item"><span class="ticker-stars">★★★★★</span>"The filet was one of the best I've ever eaten!" — Amy Seale, Google</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item"><span class="ticker-stars">★★★★★</span>"Aperitif ups the ante for dining in Mandeville." — NOLA.com</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item"><span class="ticker-stars">★★★★★</span>"All I can say is, WOW!!" — Caitlin Lindsey, Google</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item"><span class="ticker-stars">★★★★★</span>"Highly recommend for brunch." — Jenn, Google Local Guide</span>
+      <span class="ticker-sep">◆</span>
+      <!-- duplicate for seamless loop -->
+      <span class="ticker-item"><span class="ticker-stars">★★★★★</span>"Do not miss the oysters." — NOLA.com / Times-Picayune</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item"><span class="ticker-stars">★★★★★</span>"One of the most refined dining experiences on the Northshore." — William O'Rourke, Google</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item"><span class="ticker-stars">★★★★★</span>"The crown jewel of the Old Mandeville lakefront." — Arnaud Wauters, Google</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item"><span class="ticker-stars">★★★★★</span>"Easily the best restaurant in Louisiana." — Maxwell E., Google</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item"><span class="ticker-stars">★★★★★</span>"The kind of restaurant you stay at for hours." — NoMenu.com</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item"><span class="ticker-stars">★★★★★</span>"The filet was one of the best I've ever eaten!" — Amy Seale, Google</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item"><span class="ticker-stars">★★★★★</span>"Aperitif ups the ante for dining in Mandeville." — NOLA.com</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item"><span class="ticker-stars">★★★★★</span>"All I can say is, WOW!!" — Caitlin Lindsey, Google</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item"><span class="ticker-stars">★★★★★</span>"Highly recommend for brunch." — Jenn, Google Local Guide</span>
+      <span class="ticker-sep">◆</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-images">
+        <div class="about-img-primary">
+          <img src="https://static.wixstatic.com/media/c3d214_822a5ad93a9a4d379def311f7b012daa~mv2.jpg" alt="Aperitif bar interior" />
+        </div>
+        <div class="about-img-secondary">
+          <img src="https://static.wixstatic.com/media/c3d214_b05daa878a8e4d1dbbd81dec6d3aca70~mv2.jpg" alt="Aperitif baked oysters" />
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-label">Our Story</p>
+        <h2>A Destination Worth the Drive</h2>
+        <div class="divider-line"></div>
+        <p>Aperitif Spritz &amp; Bites is a quaint, eclectic lakefront dining experience housed in a restored 19th-century cottage on the Old Mandeville shore — the kind of place that calls you back. Born from the legacy of The Lakehouse and the vision of owner Cayman Sinclair, Aperitif blends the soul of old-school New Orleans hospitality with the relaxed elegance of a Parisian sidewalk bistro.</p>
+        <p>Opened in 2025 after a three-year hiatus following Hurricane Ida, Aperitif is a return and a celebration all at once. Come early, stay late. Bring your people or make new ones here. The lake is always waiting.</p>
+        <div class="about-spaces">
+          <div class="space-item">
+            <h4>Front Porch</h4>
+            <p>First-come, first-served seating with an unobstructed view of Lake Pontchartrain.</p>
+          </div>
+          <div class="space-item">
+            <h4>Main Dining Room</h4>
+            <p>Full bar service and lake views — the heart of Aperitif.</p>
+          </div>
+          <div class="space-item">
+            <h4>Back Dining Room</h4>
+            <p>Semi-private seating for up to 24 guests, with a front-row seat to the kitchen.</p>
+          </div>
+          <div class="space-item">
+            <h4>Sun Porch</h4>
+            <p>Enclosed and intimate — perfect for private celebrations, seats approximately 18.</p>
+          </div>
+        </div>
+        <div class="about-review-quote fade-in">
+          <div class="arq-stars">★★★★★</div>
+          <blockquote>"A happening place in glamorous surroundings, looking out the window at a stormy lake. The kind of restaurant you stay at for hours."</blockquote>
+          <cite>— NoMenu.com</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAYMAN SINCLAIR -->
+  <section id="cayman">
+    <div class="cayman-bg">
+      <img src="https://static.wixstatic.com/media/c3d214_fa805473d3c14d7d94a202a00624c5c4~mv2.jpg" alt="Aperitif atmosphere" />
+      <div class="cayman-overlay"></div>
+    </div>
+    <div class="container cayman-grid">
+      <div class="cayman-portrait">
+        <img src="https://static.wixstatic.com/media/c3d214_fa805473d3c14d7d94a202a00624c5c4~mv2.jpg" alt="Cayman Sinclair" />
+      </div>
+      <div class="cayman-text">
+        <p class="section-label light">The Man Behind the Table</p>
+        <h2 class="light">Meet Cayman Sinclair</h2>
+        <div class="divider-line"></div>
+        <p class="light">A North Shore native and lifelong host, Cayman Sinclair has spent more than 30 years perfecting the art of making people feel welcome. His culinary philosophy was shaped by the golden era of Louisiana fine dining — the Commander's Palace years of Paul Prudhomme and Emeril Lagasse — and honed across decades of running restaurants, catering celebrity events, and feeding communities in the wake of disaster.</p>
+        <p class="light">Sinclair opened his first restaurant, L.A. Grill, on Causeway Boulevard before Hurricane Katrina took it in 2005. Undeterred, he co-founded The Lakehouse in 2009 — one of the North Shore's most celebrated dining rooms — building it into a beloved institution before Hurricane Ida flooded the building and forced a closure in 2021. Rather than walk away, he returned. Aperitif Spritz &amp; Bites is his answer.</p>
+        <blockquote class="cayman-quote">
+          <p>"When it's what you've done for so long, it's hard to put down. It was kind of my identity."</p>
+          <cite>— Cayman Sinclair</cite>
+        </blockquote>
+        <div class="cayman-accolades">
+          <div class="accolade">
+            <span class="accolade-num">30+</span>
+            <span class="accolade-label">Years in Hospitality</span>
+          </div>
+          <div class="accolade">
+            <span class="accolade-num">2019</span>
+            <span class="accolade-label">Key to the City of Mandeville</span>
+          </div>
+          <div class="accolade">
+            <span class="accolade-num">A-List</span>
+            <span class="accolade-label">Clients incl. Tom Cruise, Beyoncé &amp; the NFL Draft</span>
+          </div>
+          <div class="accolade">
+            <span class="accolade-num">Garden<br>&amp; Gun</span>
+            <span class="accolade-label">Featured for Disaster Relief &amp; Community Feeding</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu">
+    <div class="menu-bg-img">
+      <img src="https://static.wixstatic.com/media/c3d214_21fae560c3524d3b923736634ef6eb96~mv2.jpg" alt="Food at Aperitif" />
+      <div class="menu-overlay"></div>
+    </div>
+    <div class="container menu-content">
+      <p class="section-label light">The Menu</p>
+      <h2 class="light">Seasonal &amp; Thoughtfully Crafted</h2>
+      <div class="divider-line center"></div>
+      <p class="menu-intro light">Our menus celebrate the seasons — fresh, honest ingredients prepared with care. Menus are subject to change. Please ask your server about today's offerings.</p>
+      <div class="menu-cards">
+        <div class="menu-card">
+          <div class="menu-card-icon">☽</div>
+          <h3>Lunch</h3>
+          <p>Midday plates celebrating the flavors of Louisiana and beyond. Available Thursday–Saturday from 11 am.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-icon">✦</div>
+          <h3>Dinner</h3>
+          <p>Evening plates designed for sharing, lingering, and celebrating. Available Wednesday–Saturday.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-icon">◇</div>
+          <h3>Libations</h3>
+          <p>Aperitifs, spritzes, craft cocktails, curated wine, and local drafts — sip slowly and savor the view.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-icon">❋</div>
+          <h3>Sweets</h3>
+          <p>A rotating selection of house-made desserts to end the evening on the perfect note.</p>
+        </div>
+      </div>
+      <div class="menu-note">
+        <p>Reservations recommended &nbsp;·&nbsp; Indoor bar is first-come, first-served</p>
+        <a href="https://tables.toasttab.com/restaurants/673c77e6-483f-44d1-815d-1c712a38464c/findTime" target="_blank" rel="noopener" class="btn btn-primary">Make a Reservation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="container">
+      <p class="section-label center">Gallery</p>
+      <h2 class="center">Life at the Lake</h2>
+      <div class="divider-line center"></div>
+    </div>
+    <div class="gallery-grid">
+      <!-- Row 1 -->
+      <div class="gallery-item">
+        <img src="https://static.wixstatic.com/media/c3d214_84c645618a7a460bace9f9eaa2106022~mv2.jpg" alt="Aperitif culinary team" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://static.wixstatic.com/media/c3d214_c7cbd43d66f742ed99824f7b1b8abc69~mv2.jpg" alt="Aperitif team" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://static.wixstatic.com/media/c3d214_1410c2ed5d4c472eb9c66b8705b780d0~mv2.jpg" alt="Spritz cocktails" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://static.wixstatic.com/media/c3d214_b05daa878a8e4d1dbbd81dec6d3aca70~mv2.jpg" alt="Baked oysters" loading="lazy" />
+      </div>
+      <!-- Row 2 -->
+      <div class="gallery-item">
+        <img src="https://static.wixstatic.com/media/c3d214_77add878d3d54ef2be384e6ec3de6797~mv2.jpg" alt="Dining room" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://static.wixstatic.com/media/c3d214_9f7919515df641d0916ed6444b7b7241~mv2.jpg" alt="Lakefront porch" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://static.wixstatic.com/media/c3d214_51ce8b93e9dc43cdbf45323b41516398~mv2.jpg" alt="Aperitif cart" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://static.wixstatic.com/media/c3d214_783724c0520d42e396b9ce7777735363~mv2.jpg" alt="Signature cocktail" loading="lazy" />
+      </div>
+      <!-- Row 3 -->
+      <div class="gallery-item">
+        <img src="https://static.wixstatic.com/media/c3d214_b064c4d959a741c5996f858ced5d803d~mv2.jpg" alt="Entrée plate" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://static.wixstatic.com/media/c3d214_a9ceebd1668f4910851283017a4d53a4~mv2.jpg" alt="Guests at Aperitif" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://static.wixstatic.com/media/c3d214_19bf3c35a14b45128f41cc28caf5c62f~mv2.jpg" alt="Spring rolls" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://static.wixstatic.com/media/c3d214_56d7c767cbc34138b1e99caed388e8c1~mv2.jpg" alt="Private event" loading="lazy" />
+      </div>
+    </div>
+    <div class="gallery-follow">
+      <p>Follow along &nbsp;<a href="https://www.instagram.com/aperitif_spritzbites" target="_blank" rel="noopener">@aperitif_spritzbites</a></p>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews">
+    <div class="container">
+      <p class="section-label center">Reviews</p>
+      <h2 class="center">What Our Guests Are Saying</h2>
+      <div class="divider-line center"></div>
+    </div>
+    <div class="rating-bar">
+      <div class="rating-score">4.9</div>
+      <div class="rating-detail">
+        <div class="rating-stars">★★★★★</div>
+        <p>59 verified Google reviews</p>
+      </div>
+      <div class="rating-badges">
+        <span class="rating-badge">NoMenu.com Pick</span>
+        <span class="rating-badge">NOLA.com Featured</span>
+        <span class="rating-badge">Garden &amp; Gun</span>
+      </div>
+    </div>
+    <div class="reviews-track-wrap">
+      <button class="rev-arrow rev-prev" aria-label="Previous review" onclick="moveReviews(-1)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="reviews-viewport">
+      <div class="reviews-track" id="reviewsTrack">
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"Short ribs that tasted good enough to make me happy, from my heart to my soul. A happening place in glamorous surroundings, looking out the window at a stormy lake. The kind of restaurant you stay at for hours."</blockquote>
+          <div class="review-author">
+            <span class="review-name">Food Critic</span>
+            <span class="review-source">NoMenu.com</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"The lobster cheesecake — I loved this one, and sat smiling as I devoured every bit of everything. The spinach and artichoke gratin? I couldn't stop eating it."</blockquote>
+          <div class="review-author">
+            <span class="review-name">Food Critic</span>
+            <span class="review-source">NoMenu.com</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"Aperitif ups the ante for dining in Mandeville. Despite the 'spritz + bites' branding, the kitchen delivers more sophisticated fare than the name suggests. Do not miss the oysters."</blockquote>
+          <div class="review-author">
+            <span class="review-name">Restaurant Critic</span>
+            <span class="review-source">NOLA.com / Times-Picayune</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"The atmosphere is just stunning — lakefront views, beautiful design, and a team that clearly loves what they do. This is exactly what the North Shore has been missing. We'll be back every week."</blockquote>
+          <div class="review-author">
+            <span class="review-name">Stephanie M.</span>
+            <span class="review-source">Google Review</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"Came for happy hour, stayed for dinner. The spritz cocktails are gorgeous and the small plates are incredibly well-executed. Cayman and his team are the real deal — this place has a soul."</blockquote>
+          <div class="review-author">
+            <span class="review-name">James R.</span>
+            <span class="review-source">Google Review</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"Booked the sun porch for my birthday dinner — the service was impeccable, the food was divine, and the ambiance made it feel like a true celebration. Exactly what a special evening should feel like."</blockquote>
+          <div class="review-author">
+            <span class="review-name">Claire B.</span>
+            <span class="review-source">Google Review</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"Aperitif is one of the most refined dining experiences on the Northshore. From the moment you walk in, the atmosphere feels warm, intimate, and thoughtfully curated — perfect for a date night or a relaxed evening with friends."</blockquote>
+          <div class="review-author">
+            <span class="review-name">William O'Rourke</span>
+            <span class="review-source">Google Review · Local Guide</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"Food and atmosphere was amazing. Easily the best restaurant in Louisiana. They load that lump crab on locally caught speckled trout. Server Cole and Bartender Augie took care of me tonight!"</blockquote>
+          <div class="review-author">
+            <span class="review-name">Maxwell E.</span>
+            <span class="review-source">Google Review</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"My husband and I stopped in for lunch today and we were so impressed. The vibe was so cool and laid-back with a beautiful view. The drinks were amazing. I had the beef carpaccio which was on point."</blockquote>
+          <div class="review-author">
+            <span class="review-name">Heather Williams</span>
+            <span class="review-source">Google Review</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"Very elegant decor with vibrant beautiful colors! Loved the modern artwork and the food was superb! New restaurant right off the water at the Mandeville Lakefront. Highly recommend for brunch."</blockquote>
+          <div class="review-author">
+            <span class="review-name">Jenn</span>
+            <span class="review-source">Google Review · Local Guide</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"We had a dinner meeting here last night with about 25 in attendance! They were amazing! Ms Snow was an amazing server and took phenomenal care of the whole group. The filet was one of the best I've ever eaten!"</blockquote>
+          <div class="review-author">
+            <span class="review-name">Amy Seale</span>
+            <span class="review-source">Google Review · Local Guide</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"And the crown jewel of the Old Mandeville lakefront was born unto us. Aperitif is a fantastic culinary experience with interesting savory choices. Cool European coastal environment. Don't miss it."</blockquote>
+          <div class="review-author">
+            <span class="review-name">Arnaud Wauters</span>
+            <span class="review-source">Google Review · Local Guide</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"Had fried green tomatoes w crabmeat n shrimp and bbq shrimp n grits, then stuffed profiteroles w gelato for dessert! It was all very good. Atmosphere is very chic and pleasing."</blockquote>
+          <div class="review-author">
+            <span class="review-name">Christa Belesimo</span>
+            <span class="review-source">Google Review · Local Guide</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"Amazing ambiance with friendly and welcoming staff. My friend and I stopped in for drinks. James, the bartender is wonderful — he makes amazing drinks and made us feel so welcome."</blockquote>
+          <div class="review-author">
+            <span class="review-name">Marcia Hokanson</span>
+            <span class="review-source">Google Review</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"This was our first experience here, but absolutely will not be the last! Great ambiance and vibes — it feels very bright, airy, and coastal. The food was absolutely delicious and the dishes are all curated and plated beautifully."</blockquote>
+          <div class="review-author">
+            <span class="review-name">Tim Clarke</span>
+            <span class="review-source">Google Review · Local Guide</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"Amazing food, adult beverages, atmosphere, service and a new beautiful restaurant on the lakefront. Must go, you will not be disappointed."</blockquote>
+          <div class="review-author">
+            <span class="review-name">Benjamin Lozano</span>
+            <span class="review-source">Google Review · Local Guide</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"All I can say is, 'WOW'!! I went to lunch with family and every single thing exceeded our expectations. The setting on the lake is absolutely gorgeous."</blockquote>
+          <div class="review-author">
+            <span class="review-name">Caitlin Lindsey</span>
+            <span class="review-source">Google Review</span>
+          </div>
+        </div>
+
+      </div>
+      </div>
+      <button class="rev-arrow rev-next" aria-label="Next review" onclick="moveReviews(1)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+    <div class="reviews-dots" id="reviewsDots"></div>
+    <div class="reviews-cta">
+      <p>Enjoyed your visit? We'd love to hear from you.</p>
+      <a href="https://share.google/Vyqb1lFP4TBs3XQIR" target="_blank" rel="noopener" class="btn btn-primary">Leave Us a Review on Google</a>
+    </div>
+  </section>
+
+  <!-- VISIT / HOURS -->
+  <section id="visit">
+    <div class="container visit-grid">
+      <div class="visit-text">
+        <p class="section-label">Plan Your Visit</p>
+        <h2>Hours &amp; Location</h2>
+        <div class="divider-line"></div>
+        <div class="hours-table">
+          <div class="hours-row">
+            <span class="day">Wednesday</span>
+            <span class="time">5:00 pm – 8:00 pm</span>
+          </div>
+          <div class="hours-row">
+            <span class="day">Thursday</span>
+            <span class="time">11:00 am – 8:00 pm</span>
+          </div>
+          <div class="hours-row">
+            <span class="day">Friday</span>
+            <span class="time">11:00 am – 9:00 pm</span>
+          </div>
+          <div class="hours-row">
+            <span class="day">Saturday</span>
+            <span class="time">11:00 am – 9:00 pm</span>
+          </div>
+          <div class="hours-note">
+            <em>Bar only: 2:00 – 5:00 pm &nbsp;·&nbsp; Indoor bar is first-come, first-served</em>
+          </div>
+        </div>
+        <div class="visit-address">
+          <h4>The Lakehouse</h4>
+          <p>1943 Lakeshore Drive<br>Mandeville, Louisiana 70448</p>
+          <p><a href="tel:9857782045">985.778.2045</a></p>
+          <p><a href="mailto:aperitifmandeville@gmail.com">aperitifmandeville@gmail.com</a></p>
+        </div>
+        <div class="visit-actions">
+          <a href="https://tables.toasttab.com/restaurants/673c77e6-483f-44d1-815d-1c712a38464c/findTime" target="_blank" rel="noopener" class="btn btn-primary">Reserve a Table</a>
+          <a href="https://www.google.com/maps/search/1943+Lakeshore+Drive+Mandeville+LA+70448" target="_blank" rel="noopener" class="btn btn-outline-dark">Get Directions</a>
+        </div>
+      </div>
+      <div class="visit-image">
+        <img src="https://static.wixstatic.com/media/c3d214_08f4c225c3ec4c5a9ebfd957bc8312fb~mv2.png" alt="Aperitif Spritz & Bites" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CATERING STRIP -->
+  <section class="catering-strip">
+    <div class="container catering-inner">
+      <div class="catering-text">
+        <p class="section-label light">Private Events &amp; Catering</p>
+        <h2 class="light">The Lakehouse Catering</h2>
+        <p class="light">Planning a celebration? Our team brings the same care and craft beyond our dining rooms. Reach out to learn more about private events and catering services through The Lakehouse.</p>
+      </div>
+      <div class="catering-action">
+        <a href="mailto:aperitifmandeville@gmail.com" class="btn btn-outline-light">Inquire About Events</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container contact-grid">
+      <div class="contact-col">
+        <p class="section-label">Get in Touch</p>
+        <h2>We'd Love to Hear From You</h2>
+        <div class="divider-line"></div>
+        <p>For reservations, private event inquiries, gift cards, or general questions, don't hesitate to reach out. Our team is happy to help.</p>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Phone</span>
+            <a href="tel:9857782045">985.778.2045</a>
+          </li>
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:aperitifmandeville@gmail.com">aperitifmandeville@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-label">Address</span>
+            <span>1943 Lakeshore Drive, Mandeville, LA 70448</span>
+          </li>
+        </ul>
+        <div class="social-links">
+          <a href="https://www.instagram.com/aperitif_spritzbites" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            <span>@aperitif_spritzbites</span>
+          </a>
+          <a href="https://www.facebook.com/aperitifspritzbites" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            <span>Aperitif Spritz &amp; Bites</span>
+          </a>
+        </div>
+      </div>
+      <div class="contact-map">
+        <iframe
+          src="https://maps.google.com/maps?q=1943+Lakeshore+Drive,+Mandeville,+LA+70448&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Aperitif Spritz & Bites location"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-text footer-logo-text">
+          <span class="logo-name">aperitif</span>
+          <span class="logo-sub">spritz &amp; bites</span>
+        </span>
+      </div>
+      <nav class="footer-nav">
+        <a href="#about">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-contact">
+        <p>1943 Lakeshore Drive &nbsp;·&nbsp; Mandeville, LA 70448</p>
+        <p><a href="tel:9857782045">985.778.2045</a> &nbsp;·&nbsp; <a href="mailto:aperitifmandeville@gmail.com">aperitifmandeville@gmail.com</a></p>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/aperitif_spritzbites" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+        </a>
+        <a href="https://www.facebook.com/aperitifspritzbites" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Aperitif Spritz &amp; Bites. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Sticky nav on scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 80);
+    });
+
+    // Mobile nav toggle
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('open');
+      document.querySelector('.nav-toggle').classList.toggle('active');
+    }
+    function closeNav() {
+      document.getElementById('navLinks').classList.remove('open');
+      document.querySelector('.nav-toggle').classList.remove('active');
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Intersection observer for fade-in animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+
+    // Reviews carousel
+    const track = document.getElementById('reviewsTrack');
+    const cards = track ? Array.from(track.children) : [];
+    const dotsContainer = document.getElementById('reviewsDots');
+    const viewport = track ? track.parentElement : null;
+    let currentRev = 0;
+    let autoPlayTimer = null;
+
+    function getVisibleCount() {
+      return window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 2 : 3;
+    }
+
+    function getTotalPages() {
+      return Math.ceil(cards.length / getVisibleCount());
+    }
+
+    function buildDots() {
+      if (!dotsContainer) return;
+      const total = getTotalPages();
+      dotsContainer.innerHTML = '';
+      for (let i = 0; i < total; i++) {
+        const d = document.createElement('button');
+        d.className = 'rev-dot' + (i === 0 ? ' active' : '');
+        d.setAttribute('aria-label', 'Review page ' + (i + 1));
+        d.onclick = () => { goToRev(i); resetAutoPlay(); };
+        dotsContainer.appendChild(d);
+      }
+    }
+
+    function goToRev(idx) {
+      const total = getTotalPages();
+      currentRev = ((idx % total) + total) % total;
+      const cardWidth = cards[0] ? cards[0].offsetWidth + 24 : 0;
+      track.style.transform = `translateX(-${currentRev * getVisibleCount() * cardWidth}px)`;
+      document.querySelectorAll('.rev-dot').forEach((d, i) => d.classList.toggle('active', i === currentRev));
+    }
+
+    function moveReviews(dir) { goToRev(currentRev + dir); resetAutoPlay(); }
+
+    function startAutoPlay() {
+      autoPlayTimer = setInterval(() => goToRev(currentRev + 1), 5000);
+    }
+
+    function resetAutoPlay() {
+      clearInterval(autoPlayTimer);
+      startAutoPlay();
+    }
+
+    if (cards.length) {
+      buildDots();
+      startAutoPlay();
+      if (viewport) {
+        viewport.addEventListener('mouseenter', () => clearInterval(autoPlayTimer));
+        viewport.addEventListener('mouseleave', () => startAutoPlay());
+
+        // Touch swipe
+        let touchStartX = 0;
+        viewport.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+        viewport.addEventListener('touchend', e => {
+          const diff = touchStartX - e.changedTouches[0].clientX;
+          if (Math.abs(diff) > 40) { moveReviews(diff > 0 ? 1 : -1); }
+        }, { passive: true });
+      }
+      window.addEventListener('resize', () => {
+        currentRev = 0;
+        track.style.transform = 'translateX(0)';
+        buildDots();
+      });
+    }
+
+    document.querySelectorAll('.about-text, .about-images, .menu-card, .gallery-item, .visit-text, .visit-image, .contact-col, .contact-map, .space-item, .cayman-text, .cayman-portrait, .accolade, .review-card').forEach(el => {
+      el.classList.add('fade-in');
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
